@@ -1,0 +1,150 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+:root {
+    --bg: #222831;
+    --bgtodo: #FFFFFF;
+    --fontcolor: #222831;
+    --fontwhite: #F2F2F2;
+    --fontfade: #666666;
+    --fontviolet: #4E31AA;
+    --btncolor: #2F58CD;
+}
+
+
+body {
+    background: var(--bg);
+}
+
+
+.wrapper {
+    min-height: 10vh;
+    background: var(--bgtodo);
+    margin: 50px 1em;
+    padding: 2em;
+    border-radius: 14px;
+}
+
+h1 {
+    color: var(--fontcolor);
+    font-size: 32px;
+}
+
+p {
+    color: var(--fontfade);
+
+}
+
+i.fa-calendar-days{
+    margin-left: 10px;
+}
+
+span {
+    color: var(--fontviolet);
+}
+
+/* FORM CONTAINER */
+
+.form-container .input-row {
+    padding-top: 40px;
+    width: 100%;
+    gap: 10px;
+    display: flex;
+}
+
+input#input-field {
+    width: 100%;
+    background: transparent;
+    padding: .8em;
+    border-radius: 9px;
+    border: 1px solid #959595;
+}
+
+button#btn-submit {
+    width: 40%;
+    border: none;
+    font-size: 14px;
+    border-radius: 9px;
+    background: var(--btncolor);
+    color: var(--fontwhite);
+    cursor: pointer;
+}
+
+/* TASKS LIST */
+
+.task-items {
+    padding-top: 60px;
+}
+
+.task {
+    width: 100%;
+    padding-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #D1D1D1;
+}
+
+i.fa-circle{
+    font-size: 20px;
+    color: var(--fontfade);
+    cursor: pointer;
+}
+
+.task .content {
+    width: 100%;
+}
+
+.task input {
+    background: none;
+    width: 100%;
+    padding: .7em;
+    border: none;
+    font-size: 26px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.task input[value] {
+    color: var(--fontcolor);
+}
+
+.action {
+    padding-left: 16px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    color: var(--fontfade);
+}
+
+.action i {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.done-task{
+    text-decoration:line-through;
+}
+
+.fa-circle-check{
+    font-size: 20px;
+    color: var(--fontfade);
+}
+
+
+@media screen and (min-width:560px){
+    .wrapper {
+        max-width: 560px;
+        margin: 60px auto;
+    }
+}
